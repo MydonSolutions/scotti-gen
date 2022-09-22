@@ -3,9 +3,9 @@ scotti-gen - Simulated Controlled Technosignature Testing Instrument generator. 
 
 To compile the test code and generate simulated RAW and BFR5 files, use the following command:
 
-`gcc scotti_gen.c sim_data_coeff.c -o scotti_gen -lm -lhdf5`
+`meson build && cd build && ninja`
 
-Dependencies are the hdf5 and math libraries as seen in the compile command above.
+Dependencies are the hdf5 and math libraries.
 
 To learn the different arguments necessary to run the executable/program, use the `-h` or `--help` option when running the executable.
 
